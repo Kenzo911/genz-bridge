@@ -1,0 +1,32 @@
+# Node modules (will be installed in image layers)
+node_modules
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / Editor artifacts
+.DS_Store
+.idea
+.vscode
+
+# Git
+.git
+.gitignore
+
+# Environment files
+.env*
+
+# Frontend & root files not needed for backend build context
+../client
+../*.md
+
+# Test files
+src/**/*.test.ts
+
+# Ignore Next.js build output if accidentally copied
+.next
+
+# Ignore compiled output (will be generated in Docker build)
+dist

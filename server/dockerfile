@@ -1,0 +1,64 @@
+# syntax=docker/dockerfile:1
+
+###########################
+# 1️⃣  BUILD STAGE (dev)   #
+###########################
+FROM node:18-alpine AS builder
+
+# Install OS packages required by Prisma Client generation or build
+RUN apk add --no-cache openssl openssl-dev
+
+# Set working directory
+WORKDIR /app
+
+# Copy dependency manifests first (leverages Docker cache)
+COPY package*.json ./
+
+# Install ALL deps (incl. dev) for building & type-checking
+RUN npm ci
+
+# Copy the rest of the backend source code
+COPY tsconfig.json ./
+COPY src ./src
+COPY prisma ./prisma
+
+# Generate Prisma client (needed during runtime, performed here to include generated files)
+RUN npx prisma generate
+
+# Compile TypeScript → dist/
+RUN npm run build
+
+# Remove devDependencies to slim down for transfer to final image
+# This also re-installs production dependencies only, making sure node_modules is clean
+RUN npm prune --omit=dev
+
+############################
+# 2️⃣  RUNTIME STAGE (prod) #
+############################
+FROM node:18-alpine AS runner
+
+# Install OS packages required by Prisma at runtime
+RUN apk add --no-cache openssl && \
+    rm -rf /var/cache/apk/*
+
+# --- CRITICAL FIX START ---
+# Use the built-in 'node' user from the node:alpine base image.
+# This user is automatically created by the base image and is suitable for running Node.js apps securely.
+# We no longer need to manually add the 'app' user.
+USER node
+# --- CRITICAL FIX END ---
+
+# Set working directory (should be after USER if you want home directory specific to user, but /app is fine)
+WORKDIR /app
+
+# Copy production node_modules & compiled code from the builder image
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/prisma ./prisma
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/package*.json ./ 
+
+# Expose backend port
+EXPOSE 5001
+
+# Start the server
+CMD ["node", "dist/server.js"]

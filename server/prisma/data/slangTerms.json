@@ -1,0 +1,871 @@
+[
+  {
+    "term": "Alpha, beta, and sigma",
+    "meaning": "Slang terms used in memes to describe social hierarchies among men: alpha is a leader, beta is a follower, and sigma is a dominant man outside the alpha-beta hierarchy.",
+    "context": "Primarily used within specific online communities to categorize male archetypes.",
+    "examples": [
+      "He thinks he's an alpha, but he's more of a beta.",
+      "The sigma male path is about self-reliance."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=xAGUZ-FIIqA" 
+  },
+  {
+    "term": "and I oop",
+    "meaning": "An interjection used to express surprise, shock, or awkwardness, often when someone makes an unexpected or revealing statement/action.",
+    "context": "Popularized by drag culture and widely used in online memes and casual conversation.",
+    "examples": [
+      "She just called him out, and I oop!",
+      "I accidentally spilled my drink, and I oop."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=fEg62Qbr2cA"
+  },
+  {
+    "term": "asl (as hell)",
+    "meaning": "Used as an intensifier, meaning 'as hell' or 'seriously'",
+    "context": "Common in casual online conversations",
+    "examples": [
+      "'I'm tired asl right now'",
+      "'This food good asl'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/embed/placeholder_asl"
+  },
+  {
+    "term": "ate",
+    "meaning": "Did something exceptionally well",
+    "context": "Used to praise someone's performance or appearance",
+    "examples": [
+      "'Your presentation ate'",
+      "'She ate that dance routine'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=w_pestW0RVc"
+  },
+  {
+    "term": "Axel in Harlem",
+    "meaning": "A humorous brainrot meme used to highlight random and confusing situations where the phrase seems out of context.",
+    "context": "References a specific viral meme or video; used to describe absurdity or unexpected chaos.",
+    "examples": [
+      "My friend just started yelling 'Axel in Harlem!' in the middle of class, total brainrot.",
+      "That whole situation was giving 'Axel in Harlem' vibes."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=782nI45iYsY"
+  },
+  {
+    "term": "Baby Gronk",
+    "meaning": "The nickname of Madden San Miguel, a young football prodigy; the term is sometimes used to describe a person with great potential.",
+    "context": "Originates from sports and meme culture, used to denote promising talent.",
+    "examples": [
+      "That kid on the basketball court is a real Baby Gronk, so much potential.",
+      "Everyone's calling him Baby Gronk after that performance."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=w1famcdNYck"
+  },
+  {
+    "term": "based",
+    "meaning": "Being yourself and not caring about others' opinions",
+    "context": "Used to describe someone who is authentic or has a controversial but respected opinion",
+    "examples": [
+      "'That's a based take'",
+      "'He's so based for standing up to them'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=9KLx0RKW18E"
+  },
+  {
+    "term": "bet",
+    "meaning": "Agreement or affirmation",
+    "context": "Used as a response to confirm plans or agree with something",
+    "examples": [
+      "'Want to get food?' 'Bet'",
+      "'I'll pick you up at 8.' 'Bet'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=mIAbuRAlP2E"
+  },
+  {
+    "term": "Blud/bruv",
+    "meaning": "A slang term for friend, like buddy or bro.",
+    "context": "Casual term of address among peers, often used in British internet slang but adopted globally.",
+    "examples": [
+      "What's good, blud?",
+      "who told him to come off his line bruv?"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=qs9SoWVBiN0"
+  },
+  {
+    "term": "Brainrot vibes",
+    "meaning": "The feeling of being mentally overwhelmed or consumed by something.",
+    "context": "Used to describe a state of mental exhaustion or obsession, often from excessive online content consumption or highly repetitive memes.",
+    "examples": [
+      "Scrolling TikTok for hours gives me serious brainrot vibes.",
+      "Watching too many compilations leads to brainrot vibes."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=SIeeDcnu9Ck"
+  },
+  {
+    "term": "bussin",
+    "meaning": "Really good or amazing, especially about food",
+    "context": "Originally used for food, now applied to anything excellent",
+    "examples": [
+      "'This pizza is bussin fr fr'",
+      "'The new album? Bussin'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=iCzh4bV1dAs"
+  },
+  {
+    "term": "cap/no cap",
+    "meaning": "Lie/no lie, fake/real",
+    "context": "Used to indicate whether something is true or false",
+    "examples": [
+      "'No cap, I finished all my homework'",
+      "'That's cap and you know it'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=-DRQRDJKWUM"
+  },
+  {
+    "term": "caught in 4k",
+    "meaning": "Caught doing something embarrassing with clear evidence",
+    "context": "Used when someone is exposed or caught in the act",
+    "examples": [
+      "'Bro got caught in 4k lying about his height'",
+      "'Caught in 4k staring at them'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=3RcZsdgcEHk"
+  },
+  {
+    "term": "Cheugy",
+    "meaning": "Describes something outdated and uncool that’s no longer in fashion.",
+    "context": "Used to describe aesthetics, trends, or behaviors that are considered 'basic' or 'cringey' by Gen Z, typically from millennials.",
+    "examples": [
+      "Wearing skinny jeans now is so cheugy.",
+      "Her interior design style is a bit cheugy."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=VJ4zrf6WVJ4"
+  },
+  {
+    "term": "deadass",
+    "meaning": "Being completely serious",
+    "context": "Used to emphasize sincerity or seriousness",
+    "examples": [
+      "'I'm deadass about to fail this class'",
+      "'Are you deadass right now?'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=A6QmCe-lh1w"
+  },
+  {
+    "term": "Delulu",
+    "meaning": "Short for “delusional,” used to describe someone who behaves strangely or irrationally, often in a humorous or self-aware way.",
+    "context": "Used casually to describe someone's irrational or overly optimistic beliefs, particularly in fan cultures or dating contexts.",
+    "examples": [
+      "She's completely delulu if she thinks he's going to text back.",
+      "My delulu is my solulu (my delusion is my solution)."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=S2C7YMEp-5U"
+  },
+  {
+    "term": "Did you pray today?",
+    "meaning": "Viral catchphrase from a song by U.S. rapper Young Thug that appears in memes, often used to show something that might need a quick prayer, like checking your bank account.",
+    "context": "Originates from a song, used humorously to imply dire, stressful, or anxiety-inducing situations that require divine intervention.",
+    "examples": [
+      "Checking my grades after that exam... did you pray today?",
+      "My phone battery is at 1%... did you pray today?"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=LJ2o0lWy0M8&list=RDLJ2o0lWy0M8&start_radio=1"
+  },
+  {
+    "term": "Dog water",
+    "meaning": "Something that is very bad, terrible, or of extremely low quality.",
+    "context": "Often used in gaming to describe poor performance or a bad player, but can extend to other things.",
+    "examples": [
+      "His aim is dog water in this game.",
+      "That movie was dog water, don't watch it."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=934wXtixsl8"
+  },
+  {
+    "term": "Doomscrolling",
+    "meaning": "Mindlessly scrolling through online content for hours on end, especially negative news, which can contribute to brainrot.",
+    "context": "Describes the act of excessively consuming negative or overwhelming information online, leading to mental fatigue.",
+    "examples": [
+      "I spent all night doomscrolling about current events.",
+      "Don't fall into the trap of doomscrolling before bed."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=c1nYtX-NUsc"
+  },
+  {
+    "term": "drip",
+    "meaning": "Fashionable, stylish outfit or appearance",
+    "context": "Used to describe someone's style or fashion sense",
+    "examples": [
+      "'Your drip is immaculate today'",
+      "'Man's got the drip'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=-Cn0KdeF8Q4"
+  },
+  {
+    "term": "Fandoms",
+    "meaning": "Communities of fans with a shared passion for a celebrity, sports team, TV show, pop group, etc., which can lead to brainrot if they spend a lot of time immersed in this special interest online.",
+    "context": "Refers to dedicated fan bases, often associated with intense online engagement, discussions, and content creation.",
+    "examples": [
+      "Her entire life revolves around her K-pop fandom.",
+      "The constant drama in that fandom is giving me brainrot."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=vZdrOhNLTaI"
+  },
+  {
+    "term": "Fanum tax",
+    "meaning": "Refers to the theft of food between friends, initially used by the Dominican-American streamer Fanum, and now a popular meme.",
+    "context": "A humorous term for taking a portion of someone else's food, often without explicit permission, as if it's a 'tax'.",
+    "examples": [
+      "Dude, you just took a bite of my burger? That's a Fanum tax!",
+      "I always have to watch out for the Fanum tax when eating around him."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=tEaDfVT419Y"
+  },
+  {
+    "term": "finna",
+    "meaning": "Going to or about to do something",
+    "context": "Used to indicate immediate future actions",
+    "examples": [
+      "'I'm finna head out'",
+      "'We finna start studying'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=wPuuf7Qu650"
+  },
+  {
+    "term": "FR",
+    "meaning": "Abbreviation of “for real”.",
+    "context": "Used to express agreement or emphasis.",
+    "examples": [
+      "That concert was amazing, fr.",
+      "Are you serious, fr? That's wild."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=9R0PaGMvgaY"
+  },
+  {
+    "term": "ghosting",
+    "meaning": "Suddenly ending communication without explanation.",
+    "context": "Common in dating or casual friendships when someone disappears without a trace.",
+    "examples": [
+      "He totally ghosted me after our first date.",
+      "Don't ghost your friends, just tell them you're busy."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=8FuhcvQiHP0"
+  },
+  {
+    "term": "gng",
+    "meaning": "A close group of friends; your crew.",
+    "context": "Used casually online or in conversation to refer to one's friend group, often as a greeting or shout-out (e.g., 'what's good gng?').'",
+    "examples": [
+      "Pull up later, gng!",
+      "Miss y'all, gng 💕"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=v1wsYs7mEDM"
+  },
+  {
+    "term": "Goated with the sauce",
+    "meaning": "Refers to the sauce served with goat meat, referencing the acronym GOAT, which stands for “greatest of all time”. It's a highly exaggerated way to say someone is exceptionally skilled or impressive.",
+    "context": "Used to describe someone who is extremely talented or has mastered something, often playfully.",
+    "examples": [
+      "His dribbling skills are goated with the sauce.",
+      "That artist is goated with the sauce, their paintings are incredible."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=iRPEXUnEHIM"
+  },
+  {
+    "term": "Goofy ahh",
+    "meaning": "A slang phrase used in memes and online messages to describe something or someone that’s silly, foolish, or absurd; the 'ahh' is a drawn-out way to emphasize the absurdity.",
+    "context": "Used to describe something or someone as inherently comical, awkward, or ridiculous, often in a lighthearted way.",
+    "examples": [
+      "Look at that goofy ahh dance move!",
+      "He made a goofy ahh sound and everyone laughed."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=I8Rg1BjpzWc"
+  },
+  {
+    "term": "Grindset",
+    "meaning": "A mindset centered on constant effort and hard work to achieve success, focusing on achieving goals at all costs.",
+    "context": "Used by individuals focused on hustle culture, self-improvement, and relentless pursuit of ambitions.",
+    "examples": [
+      "He's got that grindset, always working on new projects.",
+      "You need a strong grindset to make it in this industry."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=jJwf07wYTp0"
+  },
+  {
+    "term": "Gyatt",
+    "meaning": "A term used to express excitement or shock, particularly in response to seeing an attractive woman (often refers to a large posterior).",
+    "context": "Popularized on platforms like TikTok and Twitch for reactions, can be used humorously or genuinely.",
+    "examples": [
+      "Oh my gyatt, that outfit is fire!",
+      "Gyatt! Did you see that play in the game?"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/mG0ET1Kpqag"
+  },
+  {
+    "term": "hits different",
+    "meaning": "Something that's especially good in a unique way",
+    "context": "Used when something is particularly enjoyable or special",
+    "examples": [
+      "'Late night drives hit different'",
+      "'Mom's cooking hits different'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/IbpC8RiMTX4"
+  },
+  {
+    "term": "Hitting the griddy",
+    "meaning": "Doing a dance move called the griddy, created by U.S. high school football player Allen Davis, which went viral on TikTok in 2019.",
+    "context": "Refers to performing this specific popular dance move, often seen in sports celebrations or TikTok videos.",
+    "examples": [
+      "He scored a touchdown and started hitting the griddy.",
+      "Everyone at the party was trying to hit the griddy."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/gwKk1sv79mY"
+  },
+  {
+    "term": "I'm dead",
+    "meaning": "An expression used to convey extreme amusement or laughter.",
+    "context": "Used in response to something incredibly funny, indicating one is laughing so hard they 'can't breathe' or are 'dying' from laughter.",
+    "examples": [
+      "That meme is so hilarious, I'm dead!",
+      "Her joke had me screaming, I'm dead right now."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/70WbgOBBtR8"
+  },
+  {
+    "term": "It's giving",
+    "meaning": "Describes the vibe or aesthetic something is conveying, often without a direct object.",
+    "context": "Used to describe the overall impression or feeling something evokes, often in fashion or general atmosphere.",
+    "examples": [
+      "Her outfit? It's giving main character energy.",
+      "This song is giving summer vibes."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/fqvqiJ1dm-c"
+  },
+  {
+    "term": "istg",
+    "meaning": "I swear to God",
+    "context": "Used to express frustration or emphasize a point",
+    "examples": [
+      "'istg if you don't stop'",
+      "'This is the best song istg'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=LKto4gPNhcg"
+  },
+  {
+    "term": "IYKYK (If You Know, You Know)",
+    "meaning": "Used to indicate that a statement or reference will only be understood by a specific group of people with shared knowledge or experience.",
+    "context": "Commonly used in memes, inside jokes, or niche communities where context is limited to those 'in the know'.",
+    "examples": [
+      "That awkward moment in the meeting... IYKYK.",
+      "The cafeteria food on Fridays. IYKYK."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/rRRIOVZ1QmM"
+  },
+  {
+    "term": "Karen",
+    "meaning": "A pejorative term for an obnoxious, entitled, and often racist middle-aged white woman who uses her privilege to demand things.",
+    "context": "Used to describe a specific type of demanding and self-important behavior, often associated with complaining to management.",
+    "examples": [
+      "She's being such a Karen about the service.",
+      "Don't be a Karen, just let it go."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/VlOQ-p4lgOw"
+  },
+  {
+    "term": "left no crumbs",
+    "meaning": "Did something exceptionally well and thoroughly, leaving nothing to be desired.",
+    "context": "Used to praise a performance, a meal, or an achievement that was executed perfectly.",
+    "examples": [
+      "Her performance? She left no crumbs.",
+      "This meal was so good, I left no crumbs."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/GWf8ABcX308"
+  },
+  {
+    "term": "living rent free",
+    "meaning": "Something you can't stop thinking about",
+    "context": "Used when something constantly occupies your thoughts",
+    "examples": [
+      "'That TikTok is living rent free in my head'",
+      "'This song's been living rent free in my mind all week'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=QqxAlKy5YVI"
+  },
+  {
+    "term": "Looksmaxxing",
+    "meaning": "A trend that encourages young men to enhance their appearance in various ways, from skincare and basic hygiene to more extreme measures (e.g., jawline exercises, specific hairstyles).",
+    "context": "Popularized in online communities focused on self-improvement, aesthetics, and sometimes controversial male attractiveness standards.",
+    "examples": [
+      "He's been looksmaxxing all summer, hitting the gym and focusing on his skin.",
+      "The looksmaxxing community can be intense, but some tips are useful."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/suYCtoN1vDg"
+  },
+  {
+    "term": "main character",
+    "meaning": "Being the focus of attention or living life dramatically",
+    "context": "Reference to being the protagonist of your own life story",
+    "examples": [
+      "'Main character energy today'",
+      "'She's in her main character era'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/qk8w4sBAjhM"
+  },
+  {
+    "term": "Mewing",
+    "meaning": "Originally, a technique of tongue posture for jawline definition; now often used in memes as pulling a strange facial expression for comedic effect or to emphasize attractiveness.",
+    "context": "Often associated with meme culture and online trends for humor, or serious self-improvement forums.",
+    "examples": [
+      "He gave a funny mewing face for the camera.",
+      "Are you still doing mewing exercises for your jawline?"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/hGmkfI000G8"
+  },
+  {
+    "term": "mid",
+    "meaning": "Mediocre or not impressive",
+    "context": "Used to describe something disappointing or average",
+    "examples": [
+      "'That movie was mid'",
+      "'The food here is mid at best'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/lGOdvgm6ZX0"
+  },
+  {
+    "term": "ngl",
+    "meaning": "Not gonna lie",
+    "context": "Used before stating an honest opinion",
+    "examples": [
+      "'ngl, that outfit ain't it'",
+      "'This is good ngl'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=xaqdK6JPpcg"
+  },
+  {
+    "term": "NPC (Non-Player Character)",
+    "meaning": "Describes a person who lacks independent thought or behavior, acting predictably like a video game character.",
+    "context": "Used to mock someone who follows trends blindly or seems to lack personality, often in online debates.",
+    "examples": [
+      "He's just repeating what everyone else says, total NPC vibes.",
+      "Don't be an NPC, think for yourself."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=2JYJF9L5YW4"
+  },
+  {
+    "term": "Not the mosquito again",
+    "meaning": "A term used in memes to express irritation about a repeated annoyance or an unexpected, unwelcome reoccurrence.",
+    "context": "References a specific viral meme/audio, used to convey frustration or exasperation about a recurring problem.",
+    "examples": [
+      "My internet just went out... not the mosquito again!",
+      "Seeing that ex's post again? Not the mosquito again!"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/Q98GqLZ4F1k"
+  },
+  {
+    "term": "OFC (Of Course)",
+    "meaning": "Abbreviation for 'of course', used to express obviousness or agreement.",
+    "context": "Common in text messages and casual online chats.",
+    "examples": [
+      "Are you coming? OFC!",
+      "OFC I remember you."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/x_Y4tDG9C9M"
+  },
+  {
+    "term": "Ok Boomer",
+    "meaning": "A dismissive phrase used by younger generations to call out perceived outdated or condescending attitudes from older people (Baby Boomers).",
+    "context": "Used to shut down arguments or opinions that are seen as out of touch with modern realities.",
+    "examples": [
+      "He said millennials are lazy. Ok Boomer.",
+      "Just another 'Ok Boomer' moment from my grandpa."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=L3_tocfXUiI"
+  },
+  {
+    "term": "Only in Ohio",
+    "meaning": "Refers to anything that’s quirky, strange, or random, implying bizarre occurrences are uniquely common in Ohio.",
+    "context": "Used hyperbolically in memes to describe bizarre or unexpected situations, regardless of actual location.",
+    "examples": [
+      "A clown riding a unicycle down the street? Only in Ohio.",
+      "That weird news story, only in Ohio."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/r37s_xHd03Y"
+  },
+  {
+    "term": "ong",
+    "meaning": "On God - expressing truth or agreement",
+    "context": "Used to emphasize truthfulness or agreement",
+    "examples": [
+      "'This is the best pizza ong'",
+      "'You right ong'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/uB7XWejQu2c"
+  },
+  {
+    "term": "periodt",
+    "meaning": "Period - used for emphasis, end of discussion",
+    "context": "Used to emphasize a point and indicate there's nothing more to say",
+    "examples": [
+      "'You look amazing periodt'",
+      "'That's the truth periodt'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Qbl7meBOhmA"
+  },
+  {
+    "term": "pressed",
+    "meaning": "Upset, stressed, or bothered about something",
+    "context": "Used when someone is visibly upset or agitated",
+    "examples": [
+      "'Why you so pressed about it?'",
+      "'They're pressed because I didn't invite them'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/mJV-qzPrEfU"
+  },
+  {
+    "term": "Ragebait",
+    "meaning": "Content (online, social media) that is intentionally designed to provoke anger or outrage to generate clicks, shares, and engagement.",
+    "context": "Used to describe sensationalized or inflammatory content designed to elicit a strong emotional reaction, usually negative.",
+    "examples": [
+      "That news headline is pure ragebait, don't fall for it.",
+      "His whole TikTok account is just ragebait."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/vNEwDS7-MQM"
+  },
+  {
+    "term": "ratio",
+    "meaning": "When replies to a social media post receive significantly more likes than the original post, indicating widespread disapproval of the original post.",
+    "context": "Common on Twitter/X; signifies a public rejection or disagreement with the original statement.",
+    "examples": [
+      "His hot take got ratioed hard.",
+      "You just got ratioed, delete your tweet."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/rmvuWRo-rs8"
+  },
+  {
+    "term": "respectfully",
+    "meaning": "Preceding a potentially offensive statement",
+    "context": "Used ironically before saying something that might be considered rude",
+    "examples": [
+      "'Respectfully, what were you thinking?'",
+      "'That outfit ain't it, respectfully'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=k30OxCSxwG4"
+  },
+  {
+    "term": "rizz",
+    "meaning": "Charisma or charm, especially in romantic situations",
+    "context": "Used to describe someone's ability to attract romantic interest",
+    "examples": [
+      "'Man's got no rizz'",
+      "'Your rizz game is strong'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/gOftetW2AU0"
+  },
+  {
+    "term": "rizzler",
+    "meaning": "Someone who has exceptional 'rizz' (charisma/flirting ability).",
+    "context": "Used to describe a master of flirting or charming others.",
+    "examples": [
+      "He's a true rizzler, always gets the number.",
+      "You need to learn from that rizzler over there."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/Jw0LNrnxuq4"
+  },
+  {
+    "term": "simp",
+    "meaning": "Someone who shows excessive admiration or attention",
+    "context": "Used to describe someone who goes to great lengths to get attention",
+    "examples": [
+      "'Stop simping for them'",
+      "'He's such a simp'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/oJAcNa1pxz8"
+  },
+  {
+    "term": "situationship",
+    "meaning": "A romantic or sexual relationship that is undefined and lacks commitment.",
+    "context": "Describes a relationship that's more than friends but less than a committed partnership.",
+    "examples": [
+      "Are they dating or is it just a situationship?",
+      "I'm tired of this situationship, I need clarity."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=3J6GjIJLhzQ"
+  },
+  {
+    "term": "Skibidi",
+    "meaning": "Can mean good, cool, bad, evil, or dumb depending on the context. Often associated with the 'Skibidi Toilet' meme series.",
+    "context": "Highly versatile term, meaning is derived from surrounding context and the specific meme/joke it's used in.",
+    "examples": [
+      "That meme was so skibidi, it made no sense but was funny.",
+      "Don't do anything too skibidi tonight."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=zo4g2Ue-zEo"
+  },
+  {
+    "term": "slay",
+    "meaning": "Doing something exceptionally well",
+    "context": "Used as praise for accomplishments or appearance",
+    "examples": [
+      "'You slay this outfit'",
+      "'Queen, slay!'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/ivGo-OaFAkg"
+  },
+  {
+    "term": "slept on",
+    "meaning": "Underrated or not getting deserved attention",
+    "context": "Used to describe something underappreciated",
+    "examples": [
+      "'This artist is so slept on'",
+      "'That restaurant is slept on fr'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/qdR-5VI-vmo"
+  },
+  {
+    "term": "Smash (or Pass)",
+    "meaning": "To have sexual intercourse with someone (smash), or to decline the opportunity (pass). Often used in a game context.",
+    "context": "Popularized by a game where participants choose whether they would sleep with a hypothetical person based on their appearance.",
+    "examples": [
+      "He's a smash, definitely.",
+      "That idea is a hard pass for me."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/9QA8QYOATUw"
+  },
+  {
+    "term": "Snack",
+    "meaning": "A very attractive person.",
+    "context": "Used to describe someone who looks appealing, as if they are 'good enough to eat'.",
+    "examples": [
+      "Your friend is such a snack!",
+      "She's a whole snack, wow."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/QOW0P0pYv1s"
+  },
+  {
+    "term": "Spill the tea",
+    "meaning": "Tell me the gossip or dramatic news.",
+    "context": "Used to prompt someone to share juicy details or rumors.",
+    "examples": [
+      "Come on, spill the tea, what happened?",
+      "I heard something about him, now spill the tea!"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=TKP6bbjg1aA"
+  },
+  {
+    "term": "Stan",
+    "meaning": "Be a fan of someone or something, comes from the song by Eminem. Implies being an obsessive, dedicated, and sometimes overly zealous fan.",
+    "context": "Refers to being an extremely devoted follower of a celebrity, band, or public figure.",
+    "examples": [
+      "I stan that K-pop group so hard.",
+      "Are you a stan of that new artist?"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=mYp4tGE-zKI"
+  },
+  {
+    "term": "Strapped",
+    "meaning": "Having a lot of money, being wealthy.",
+    "context": "Informal term to describe someone who is financially well-off.",
+    "examples": [
+      "After that bonus, he's feeling pretty strapped.",
+      "They're not just rich, they're strapped."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/b45wcoSZPTI"
+  },
+  {
+    "term": "sus",
+    "meaning": "Suspicious or questionable",
+    "context": "Used when something seems suspicious or off",
+    "examples": [
+      "'That's kinda sus'",
+      "'Why you acting sus?'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/I1rSHOWQGOM"
+  },
+  {
+    "term": "The chokehold",
+    "meaning": "Something that has a strong, often overwhelming, grip or influence over someone or something.",
+    "context": "Used to describe something that is dominating attention or popular culture, often in a humorous or relatable way.",
+    "examples": [
+      "That song has me in a chokehold, I can't stop listening.",
+      "This new show has a chokehold on everyone's attention."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/wGxgg_binzU"
+  },
+  {
+    "term": "Touch grass",
+    "meaning": "An insult implying someone spends too much time online and needs to go outside and experience reality.",
+    "context": "Used to mock or criticize someone who seems out of touch with real life due to excessive internet use.",
+    "examples": [
+      "Bro, you've been gaming for 12 hours straight, go touch grass.",
+      "His takes are so wild, he needs to touch grass."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/tgVj6VLGp_s"
+  },
+  {
+    "term": "UwU",
+    "meaning": "A cute face emoticon used to express happiness or affection in online chats, sometimes used ironically to mock overly cutesy behavior.",
+    "context": "Emoticon expressing cuteness, shyness, or a playful, sometimes mocking, tone.",
+    "examples": [
+      "UwU, you're so sweet!",
+      "He's acting all innocent, uwu."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Fv8gk5j4eX8"
+  },
+  {
+    "term": "valid",
+    "meaning": "Acceptable or worthy of approval",
+    "context": "Used to show support or agreement",
+    "examples": [
+      "'Your feelings are valid'",
+      "'That's a valid reason'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/YsGCwXgyxQU"
+  },
+  {
+    "term": "vibe check",
+    "meaning": "Assessing someone's mood or attitude",
+    "context": "Used to evaluate the atmosphere or someone's energy",
+    "examples": [
+      "'Quick vibe check'",
+      "'You failed the vibe check'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/omS0tqI05YY"
+  },
+  {
+    "term": "vibing",
+    "meaning": "Enjoying the moment or feeling good",
+    "context": "Used to describe a state of contentment or enjoyment",
+    "examples": [
+      "'Just vibing to this music'",
+      "'We're vibing rn'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/aPBGMmbi0Yg"
+  },
+  {
+    "term": "W",
+    "meaning": "Win or victory",
+    "context": "Used to celebrate success or good things",
+    "examples": [
+      "'That's a huge W'",
+      "'W friend for helping me'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/CFANNjSMK8o"
+  },
+  {
+    "term": "Yass",
+    "meaning": "An exaggerated way of saying yes to express excitement or strong approval, often associated with LGBTQ+ culture.",
+    "context": "Expresses strong enthusiasm, agreement, or affirmation, particularly in response to something impressive.",
+    "examples": [
+      "Yass queen, you look amazing!",
+      "Yass, that performance was incredible!"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/JHRKWzzS8Rcs"
+  },
+  {
+    "term": "Yeet",
+    "meaning": "Used to show excitement or surprise in various situations, like doing a dance move or throwing something forcefully.",
+    "context": "Versatile interjection for enthusiasm, or a verb for throwing something with force/disregard.",
+    "examples": [
+      "I just aced that test, yeet!",
+      "He just yeeted that ball across the field."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/watch?v=S2t59dPf9K0"
+  },
+  {
+    "term": "Zesty",
+    "meaning": "A slang term that can describe a person (as lively, quirky, or flamboyant), a situation (as dramatic or unpredictable), or an action (as bold or cheeky). Often used to describe effeminate male behavior.",
+    "context": "Describes something as having an energetic, spirited, or unique quality; can imply a certain 'flair' or 'sass'.",
+    "examples": [
+      "His dance moves are surprisingly zesty.",
+      "That outfit is giving very zesty vibes."
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/Zfa_RFJ7rPg"
+  },
+  {
+    "term": "zero rizz",
+    "meaning": "Having no game or charm in romantic situations",
+    "context": "Used to describe someone's lack of romantic charisma",
+    "examples": [
+      "'Bro has zero rizz fr'",
+      "'Your rizz game is at zero'"
+    ],
+    "type": "genz",
+    "youtubeUrl": "https://www.youtube.com/shorts/m2jXjBt0K9s"
+  }
+]
