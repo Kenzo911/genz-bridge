@@ -30,8 +30,8 @@ const limiter = rateLimit({
 // Middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? ['https://yourdomain.com'] 
+  origin: process.env.NODE_ENV === 'production'
+    ? ['https://genz-bridge.vercel.app'] 
     : ['http://localhost:3000'],
   credentials: true,
 }));
