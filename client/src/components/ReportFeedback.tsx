@@ -49,10 +49,11 @@ export default function ReportFeedback() {
       setTitle("");
       setTag(tagOptions[0]);
       setMessage("");
-      toast.success("Thanks for your feedback, unc/twin! We'll look into it!");
-    } catch (err: any) {
+      toast.success("Thanks for your feedback, unc/twin! We&#39;ll look into it!");
+    } catch (err: unknown) { 
       console.error(err);
-      toast.error(err?.response?.data?.error || "Something went wrong.");
+      const errorMessage = (err as any)?.response?.data?.error || "Something went wrong.";
+      toast.error(errorMessage);
     } finally {
       setSubmitting(false);
     }
