@@ -24,6 +24,7 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
+
       - name: Build and push Docker image to ECR
         uses: docker/build-push-action@v5
         with:
@@ -34,31 +35,30 @@ jobs:
       
       - name: Create Deployment Artifact (Zip)
         run: |
-          # Pastikan Anda berada di root directory project Anda
-          # (GitHub Actions akan checkout code Anda di sini)
+          # Pastikan Anda berada di root directory project Anda (oleh Checkout code)
           
           # Pindah ke direktori server (backend)
           cd server
           
           # Buat file zip dari semua yang dibutuhkan CodeDeploy
-          # appspec.yml dan folder scripts/ harus ada di level ini atau root zip
           zip -r deployment_artifact.zip . -x "node_modules/*" ".git/*" "*.env*" "dist/*" "build/*" "coverage/*" # Exclude unnecessary files
           
           echo "Deployment artifact created: deployment_artifact.zip"
 
-          - name: Upload Deployment Artifact to S3
-          run: |
-            aws s3 cp server/deployment_artifact.zip s3://genz-bridge-codedeploy-artifacts/deployment_artifact_${{ github.sha }}.zip
-            echo "S3_BUCKET_NAME=genz-bridge-codedeploy-artifacts" >> $GITHUB_ENV
-            echo "S3_KEY=deployment_artifact_${{ github.sha }}.zip" >> $GITHUB_ENV
+      - name: Upload Deployment Artifact to S3
+        run: |
+          aws s3 cp server/deployment_artifact.zip s3://genz-bridge-codedeploy-artifacts/deployment_artifact_${{ github.sha }}.zip
+          echo "S3_BUCKET_NAME=genz-bridge-codedeploy-artifacts" >> $GITHUB_ENV
+          echo "S3_KEY=deployment_artifact_${{ github.sha }}.zip" >> $GITHUB_ENV
 
       - name: Trigger AWS CodeDeploy Deployment
         run: |
-          # Perintah AWS CLI untuk membuat deployment, sekarang menunjuk ke S3
+          APPSPEC_CONTENT=$(cat server/appspec.yml | tr -d '\n' | sed 's/"/\\"/g')
+
           aws deploy create-deployment \
             --application-name GenZBridgeBackend \
             --deployment-group-name GenZBridgeProdGroup \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --description "Automated deployment from GitHub Actions - ${{ github.sha }}" \
-            --revision "revisionType=S3,s3Location={bucket=${{ env.S3_BUCKET_NAME }},key=${{ env.S3_KEY }},bundleType=zip}" \
+            --revision "revisionType=AppSpecContent,appSpecContent={content=$APPSPEC_CONTENT,sha256=$(shasum -a 256 server/appspec.yml | awk '{print $1}')}" \
             --file-exists-behavior OVERWRITE
