@@ -20,6 +20,9 @@ const app = express();
 const prisma = new PrismaClient();
 const PORT = process.env.PORT || 5001;
 
+app.set('trust proxy', 1); // 1 = trust the first proxy (Nginx)
+
+
 // Rate limiting
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -29,14 +32,29 @@ const limiter = rateLimit({
 
 // Middleware
 app.use(helmet());
+const allowedOrigins = [
+  'https://genz-bridge.vercel.app',
+  'https://genzbridge.dev',         
+  'https://www.genzbridge.dev'
+];
+
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production'
-    ? ['https://genz-bridge.vercel.app', 'https://genzbridge.dev'] 
-    : ['http://localhost:3000'], // Keep localhost for development
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) === -1) {
+      const msg = `The CORS policy for this site does not allow access from the specified Origin: ${origin}`;
+      console.error(msg); // Log error di backend
+      return callback(new Error(msg), false);
+    }
+    console.log(`CORS: Allowing origin ${origin}`); // Log origin yang diizinkan
+    return callback(null, true);
+  },
   credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  allowedHeaders: ['Content-Type', 'Authorization'], 
 }));
-app.use(limiter);
-app.set('trust proxy', 1); // 1 = trust the first proxy (Nginx)
+
+app.use(limiter); 
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
@@ -68,7 +86,6 @@ app.use('*', (req, res) => {
 // Database connection and server startup
 async function startServer() {
   try {
-    // Test database connection
     await prisma.$connect();
     console.log('✅ Database connected successfully');
 
