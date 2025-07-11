@@ -1,45 +1,21 @@
-version: 0.0
-os: linux
+version: 0.0 # Versi format AppSpec file
+os: linux # Sistem operasi target deployment
 
 files:
-  - source: / # Menandakan root directory dari deployment bundle
-    destination: /tmp/codedeploy-app # Direktori sementara di EC2 tempat file akan di-copy jika ada
+  - source: / 
+    destination: /tmp/codedeploy-app 
 
 permissions:
-  - object: /tmp/codedeploy-app/scripts/stop_and_remove_container.sh
+  - object: /tmp/codedeploy-app/scripts/deploy_container.sh 
     pattern: "**" 
     owner: root
     group: root
-    mode: 755 
-    type:
-      - file
-  - object: /tmp/codedeploy-app/scripts/pull_docker_image.sh
-    pattern: "**"
-    owner: root
-    group: root
-    mode: 755
-    type:
-      - file
-  - object: /tmp/codedeploy-app/scripts/start_docker_container.sh
-    pattern: "**"
-    owner: root
-    group: root
-    mode: 755
+    mode: 755 # rwxr-xr-x (executable for owner, readable/executable for group/others)
     type:
       - file
 
 hooks:
-  BeforeInstall:
-    - location: scripts/stop_and_remove_container.sh
-      timeout: 60
-      runas: root
-
-  AfterInstall:
-    - location: scripts/pull_docker_image.sh
-      timeout: 300
-      runas: root
-
-  ApplicationStart:
-    - location: scripts/start_docker_container.sh
-      timeout: 120
+  ApplicationStart: 
+    - location: scripts/deploy_container.sh 
+      timeout: 360 
       runas: root
