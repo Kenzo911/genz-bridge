@@ -35,7 +35,8 @@ jobs:
       
       - name: Create Deployment Artifact (Zip)
         run: |
-          # Pastikan Anda berada di root directory project Anda (oleh Checkout code)
+          # Pastikan Anda berada di root directory project Anda
+          # (GitHub Actions akan checkout code Anda di sini)
           
           # Pindah ke direktori server (backend)
           cd server
@@ -53,12 +54,11 @@ jobs:
 
       - name: Trigger AWS CodeDeploy Deployment
         run: |
-          APPSPEC_CONTENT=$(cat server/appspec.yml | tr -d '\n' | sed 's/"/\\"/g')
-
+          # Perintah AWS CLI untuk membuat deployment, sekarang menunjuk ke S3
           aws deploy create-deployment \
             --application-name GenZBridgeBackend \
             --deployment-group-name GenZBridgeProdGroup \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --description "Automated deployment from GitHub Actions - ${{ github.sha }}" \
-            --revision "revisionType=AppSpecContent,appSpecContent={content=$APPSPEC_CONTENT,sha256=$(shasum -a 256 server/appspec.yml | awk '{print $1}')}" \
+            --revision "revisionType=S3,s3Location={bucket=${{ env.S3_BUCKET_NAME }},key=${{ env.S3_KEY }},bundleType=zip}" \
             --file-exists-behavior OVERWRITE
