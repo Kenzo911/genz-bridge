@@ -1,4 +1,4 @@
-name: Deploy Backend to AWS EC2
+name: Deploy Backend with AWS CodeDeploy
 
 on:
   push:
@@ -11,47 +11,36 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3 
-
-      - name: Log in to Docker Hub
-        uses: docker/login-action@v3
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
         with:
-          username: ${{ secrets.DOCKER_USERNAME }} 
-          password: ${{ secrets.DOCKER_PASSWORD }} 
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }} 
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-southeast-2 
 
-      - name: Build and push Docker image for AMD64
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+
+      - name: Build and push Docker image to ECR
         uses: docker/build-push-action@v5
         with:
           context: ./server 
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/genz-bridge-backend:latest 
+          tags: ${{ steps.login-ecr.outputs.registry }}/genz-bridge-backend:latest
           platforms: linux/amd64 
 
-      - name: Deploy to AWS EC2 VM via SSH
-        uses: appleboy/ssh-action@master 
-        with:
-          host: ${{ secrets.SSH_HOST }} 
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }} 
-          script: |
-            echo "Pulling latest Docker image..."
-            docker pull ${{ secrets.DOCKER_USERNAME }}/genz-bridge-backend:latest || true 
-            
-            echo "Stopping and removing old container if exists..."
-            docker stop genz-backend || true 
-            docker rm genz-backend || true   
-            
-            echo "Starting new container..."
-            docker run -d \
-              --name genz-backend \
-              --restart always \
-              -p 5001:5001 \
-              -e DATABASE_URL="${{ secrets.SUPABASE_DATABASE_URL }}" \
-              -e OPENAI_API_KEY="${{ secrets.OPENAI_API_KEY }}" \
-              -e PORT=5001 \
-              ${{ secrets.DOCKER_USERNAME }}/genz-bridge-backend:latest
-            
-            echo "Deployment complete."
+      - name: Trigger AWS CodeDeploy
+        run: |
+          APPSPEC_CONTENT=$(cat server/appspec.yml | tr -d '\n' | sed 's/"/\\"/g')
+
+          aws deploy create-deployment \
+            --application-name GenZBridgeBackend \
+            --deployment-group-name GenZBridgeProdGroup \
+            --deployment-config-name CodeDeployDefault.OneAtATime \
+            --description "Automated deployment from GitHub Actions - ${{ github.sha }}" \
+            --revision "revisionType=AppSpecContent,appSpecContent={content=$APPSPEC_CONTENT,sha256=$(shasum -a 256 server/appspec.yml | awk '{print $1}')}" \
+            --file-exists-behavior OVERWRITE 
