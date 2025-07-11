@@ -22,7 +22,6 @@ const PORT = process.env.PORT || 5001;
 
 app.set('trust proxy', 1); // 1 = trust the first proxy (Nginx)
 
-
 // Rate limiting
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -43,10 +42,8 @@ app.use(cors({
     if (!origin) return callback(null, true);
     if (allowedOrigins.indexOf(origin) === -1) {
       const msg = `The CORS policy for this site does not allow access from the specified Origin: ${origin}`;
-      console.error(msg); // Log error di backend
       return callback(new Error(msg), false);
     }
-    console.log(`CORS: Allowing origin ${origin}`); // Log origin yang diizinkan
     return callback(null, true);
   },
   credentials: true,
