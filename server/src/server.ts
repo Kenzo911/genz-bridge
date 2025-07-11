@@ -31,11 +31,12 @@ const limiter = rateLimit({
 app.use(helmet());
 app.use(cors({
   origin: process.env.NODE_ENV === 'production'
-    ? ['https://genz-bridge.vercel.app'] 
-    : ['http://localhost:3000'],
+    ? ['https://genz-bridge.vercel.app', 'https://genzbridge.dev'] 
+    : ['http://localhost:3000'], // Keep localhost for development
   credentials: true,
 }));
 app.use(limiter);
+app.set('trust proxy', 1); // 1 = trust the first proxy (Nginx)
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
@@ -95,4 +96,4 @@ process.on('SIGINT', async () => {
   process.exit(0);
 });
 
-startServer(); 
+startServer();
