@@ -46,12 +46,11 @@ jobs:
           
           echo "Deployment artifact created: deployment_artifact.zip"
 
-      - name: Upload Deployment Artifact to S3
-        run: |
-          aws s3 cp server/deployment_artifact.zip s3://genz-bridge-codedeploy-artifacts/deployment_artifact_${{ github.sha }}.zip
-          echo "S3_BUCKET_NAME=genz-bridge-codedeploy-artifacts" >> $GITHUB_ENV
-          echo "S3_KEY=deployment_artifact_${{ github.sha }}.zip" >> $GITHUB_ENV
-          ${{ github.sha }} 
+          - name: Upload Deployment Artifact to S3
+          run: |
+            aws s3 cp server/deployment_artifact.zip s3://genz-bridge-codedeploy-artifacts/deployment_artifact_${{ github.sha }}.zip
+            echo "S3_BUCKET_NAME=genz-bridge-codedeploy-artifacts" >> $GITHUB_ENV
+            echo "S3_KEY=deployment_artifact_${{ github.sha }}.zip" >> $GITHUB_ENV
 
       - name: Trigger AWS CodeDeploy Deployment
         run: |
