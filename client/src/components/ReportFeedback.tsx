@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import axios from "axios";
 import {
   Dialog,
   DialogContent,
@@ -32,7 +33,7 @@ export default function ReportFeedback() {
   const [message, setMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!message.trim()) {
       toast.error("Message is required.");
@@ -50,9 +51,14 @@ export default function ReportFeedback() {
       setTag(tagOptions[0]);
       setMessage("");
       toast.success("Thanks for your feedback, unc/twin! We&#39;ll look into it!");
-    } catch (err: unknown) { 
+    } catch (err: unknown) {
       console.error(err);
-      const errorMessage = (err as any)?.response?.data?.error || "Something went wrong.";
+      let errorMessage = "Something went wrong.";
+      if (axios.isAxiosError(err)) {
+        errorMessage = err.response?.data?.error ?? err.message;
+      } else if (err instanceof Error) {
+        errorMessage = err.message;
+      }
       toast.error(errorMessage);
     } finally {
       setSubmitting(false);
@@ -73,7 +79,7 @@ export default function ReportFeedback() {
         <DialogHeader>
           <DialogTitle>Report Ambiguous Translation</DialogTitle>
           <DialogDescription>
-            Help us improve by describing what's incorrect or unclear.
+            Help us improve by describing what&#39;s incorrect or unclear.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -109,7 +115,7 @@ export default function ReportFeedback() {
               rows={5}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Tell us what's off about the translation..."
+              placeholder="Tell us what&#39;s off about the translation..."
             />
           </div>
           <DialogFooter>
